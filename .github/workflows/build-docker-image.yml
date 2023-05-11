@@ -11,4 +11,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build --tag airflow_full:${{github.ref_name}}
+      run: docker build -t airflow_full:${{github.ref_name}} .
