@@ -2,7 +2,7 @@ FROM apache/airflow:2.6.0-python3.10
 
 USER root
 
-RUN apt-get update && apt-get install -y gcc git-all
+RUN apt-get update && apt-get install -y gcc git
 RUN apt-get update && apt-get install -y --no-install-recommends alien libaio1 wget && \
     wget https://download.oracle.com/otn_software/linux/instantclient/185000/oracle-instantclient18.5-basiclite-18.5.0.0.0-3.x86_64.rpm && \
     wget https://download.oracle.com/otn_software/linux/instantclient/185000/oracle-instantclient18.5-devel-18.5.0.0.0-3.x86_64.rpm && \
