@@ -12,4 +12,7 @@ ENV LD_LIBRARY_PATH="/usr/lib/oracle/18.5/client64/lib:${LD_LIBRARY_PATH}"
 
 USER airflow
 
-RUN pip install psycopg2-binary==2.9.6 pandas==1.5 cx_oracle==8.3.0 azure-storage-blob==12.16.0
+RUN pip install psycopg2-binary==2.9.6 pandas==1.5 cx_oracle==8.3.0 azure-storage-blob==12.16.0 \
+        apache-airflow-providers-oracle==3.6.0 \
+        apache-airflow-providers-postgres==5.4.0 \
+        apache-airflow-providers-microsoft-azure==6.0.0
